@@ -27,7 +27,6 @@
   </head>
 
   <body>
-    
     <header class="page-header">
       <div class="container header-container">
         <nav class="page-header-nav">
@@ -51,6 +50,12 @@
             <li class="page-header-address-item"><a href="tel:+110001111111" class="page-header-address-link">+11 (000) 111-11-11</a></li>
           </ul>
         </address>
+
+        <button type="button" class="burger-open-button">
+          <svg class="burger-icon" width="18" height="16">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -69,8 +74,10 @@
         </div>
       </section>
 
+    
+
       <section class="section main-qualities">
-        <div class="container">
+        <div class="container main-qualities-container">
           <h2 class="main-qualities-header visually-hidden">Qualities</h2>
 
           <ul class="main-qualities-list">
@@ -82,7 +89,7 @@
               </div>
               <h3 class="main-qualities-list-item-header">Strategy</h3>
               <p class="main-qualities-list-item-text">
-                Our goal is to identify the business problem to walk away with <br>the perfect and creative solution.
+                Our goal is to identify the business problem to walk away with the perfect and creative solution.
               </p>
             </li>
             
@@ -131,11 +138,10 @@
 
           <ul class="main-team-list">
             <li class="main-team-list-item">
-              <img
-                src="./images/img-1.jpg"
-                alt="Product designer"
-                width=264
-              >
+              <picture>
+                <source srcset="./images/img-1-2x.jpg 1x, ./images/img-1-2x.jpg 2x">
+                <img src="./images/img-1.jpg" alt="Product designer" width=264>
+              </picture>
               <div class="main-team-list-card-content">
                 <h3 class="main-team-list-item-header">Mark guerrero</h3>
                 <p class="main-team-list-item-text">Product designer</p>
@@ -177,11 +183,10 @@
             </li>
 
             <li class="main-team-list-item">
-              <img
-                src="./images/img-2.jpg"
-                alt="Frontend developer"
-                width=264
-              >
+              <picture>
+                <source srcset="./images/img-2-2x.jpg 1x, ./images/img-2-2x.jpg 2x">
+                <img src="./images/img-2.jpg" alt="Frontend developer" width=264>
+              </picture>
               <div class="main-team-list-card-content">
                 <h3 class="main-team-list-item-header">Tom ford</h3>
                 <p class="main-team-list-item-text">Frontend developer</p>
@@ -223,11 +228,10 @@
             </li>
 
             <li class="main-team-list-item">
-              <img
-                src="./images/img-3.jpg"
-                alt="Marketing"
-                width=264
-              >
+              <picture>
+                <source srcset="./images/img-3-2x.jpg 1x, ./images/img-3-2x.jpg 2x">
+                <img src="./images/img-3.jpg" alt="Marketing" width=264>
+              </picture>
               <div class="main-team-list-card-content">
                 <h3 class="main-team-list-item-header">Camila garcia</h3>
                 <p class="main-team-list-item-text">Marketing</p>
@@ -269,11 +273,10 @@
             </li>
             
             <li class="main-team-list-item">
-              <img
-                src="./images/img-4.jpg"
-                alt="UI designer"
-                width=264
-              >
+              <picture>
+                <source srcset="./images/img-4-2x.jpg 1x, ./images/img-4-2x.jpg 2x">
+                <img src="./images/img-4.jpg" alt="UI designer" width=264>
+              </picture>
               <div class="main-team-list-card-content">
                 <h3 class="main-team-list-item-header">Daniel wilson</h3>
                 <p class="main-team-list-item-text">UI designer</p>
@@ -318,18 +321,22 @@
       </section>
 
       <section class="section main-portfolio">
-        <div class="container">
+        <div class="container main-portfolio-container">
           <h2 class="main-portfolio-header">Our Portfolio</h2>
       
           <ul class="main-portfolio-list">
             <li class="main-portfolio-list-item">
               <div class="main-portfolio-overlay">
-                <img
-                  src="./images/banking-app.jpg"
-                  alt="Banking app picture"
-                  width=360
-                  class="main-portfolio-list-item-image"
-                >
+
+                <picture>
+                  <source srcset="./images/banking-app.jpg 1x, ./images/banking-app-2x.jpg 2x">
+                  <img 
+                    class="main-portfolio-list-item-image" 
+                    src="./images/banking-app.jpg" 
+                    alt="Banking app picture" 
+                    width=288
+                  >
+                </picture>
 
                 <p class="main-portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -343,12 +350,15 @@
 
             <li class="main-portfolio-list-item">
               <div class="main-portfolio-overlay">
-                <img
-                  src="./images/cashless-payment.jpg"
-                  alt="Cashless payment picture"
-                  width=360
-                  class="main-portfolio-list-item-image"
-                >
+                <picture>
+                  <source srcset="./images/cashless-payment.jpg 1x, ./images/cashless-payment-2x.jpg 2x">
+                  <img 
+                    class="main-portfolio-list-item-image" 
+                    src="./images/cashless-payment.jpg"
+                    alt="Cashless payment picture" 
+                    width=288
+                  >
+                </picture>
 
                 <p class="main-portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -362,12 +372,16 @@
 
             <li class="main-portfolio-list-item">
               <div class="main-portfolio-overlay">
-                <img
-                  src="./images/meditation-app.jpg"
-                  alt="Meditation app picture"
-                  width=360
-                  class="main-portfolio-list-item-image"
-                >
+                <picture>
+                  <source srcset="./images/meditation-app.jpg 1x, ./images/meditation-app-2x.jpg 2x">
+                  <img 
+                    class="main-portfolio-list-item-image" 
+                    src="./images/meditation-app.jpg"
+                    alt="Meditation app picture" 
+                    width=288
+                  >
+                </picture>
+
 
                 <p class="main-portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -380,12 +394,15 @@
 
             <li class="main-portfolio-list-item">
               <div class="main-portfolio-overlay">
-                <img
-                  src="./images/taxi-service.jpg"
-                  alt="Taxi picture"
-                  width=360
-                  class="main-portfolio-list-item-image"
-                >
+                <picture>
+                  <source srcset="./images/taxi-service.jpg 1x, ./images/taxi-service-2x.jpg 2x">
+                  <img 
+                    class="main-portfolio-list-item-image" 
+                    src="./images/taxi-service.jpg"
+                    alt="Taxi picture" 
+                    width=288
+                  >
+                </picture>
 
                 <p class="main-portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
@@ -398,13 +415,16 @@
 
             <li class="main-portfolio-list-item">
               <div class="main-portfolio-overlay">
-                <img
-                  src="./images/illustrations.jpg"
-                  alt="Meditation app picture"
-                  width=360
-                  class="main-portfolio-list-item-image"
-                >
 
+                <picture>
+                  <source srcset="./images/illustrations.jpg 1x, ./images/illustrations-2x.jpg 2x">
+                  <img 
+                    class="main-portfolio-list-item-image" 
+                    src="./images/illustrations.jpg"
+                    alt="Illustrations" 
+                    width=288
+                  >
+                </picture>
                 <p class="main-portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
 
@@ -418,13 +438,16 @@
 
             <li class="main-portfolio-list-item">
               <div class="main-portfolio-overlay">
-                <img
-                  src="./images/courses.jpg"
-                  alt="Smiley girl picture"
-                  width=360
-                  class="main-portfolio-list-item-image"
-                >
 
+                <picture>
+                  <source srcset="./images/courses.jpg 1x, ./images/courses-2x.jpg 2x">
+                  <img 
+                    class="main-portfolio-list-item-image" 
+                    src="./images/courses.jpg"
+                    alt="Smiley girl picture" 
+                    width=288
+                  >
+                </picture>
                 <p class="main-portfolio-overlay-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App</p>
               </div>
 
@@ -443,16 +466,14 @@
         <div class="footer-wrapper-logo">
           <a href="./index.html" class="page-footer-link">Web<span class="page-footer-logo">Studio</span></a>
           <p class="page-footer-text">
-            Increase the flow of customers and <br>sales for your
-            business with digital <br>marketing & growth solutions.
+            Increase the flow of customers and sales for your
+            business with digital marketing & growth solutions.
           </p>
         </div>
 
         <div class="footer-icons-wrapper">
           <p class="footer-wrapper-text">Social media</p>
-
           <ul class="footer-icons-list">
-
             <li class="footer-list-item">
               <a href="https://www.instagram.com" class="footer-list-link-item" target="_blank">
                 <svg class="footer-list-icon" height="24" width="24">
@@ -487,12 +508,10 @@
         </div>
 
         <div class="footer-form-container">
-
           <p class="footer-subscribe">Subscribe</p>
 
           <form class="footer-subscribe-wrapper">
             <label for="footer-user-mail" class="user-mail-label">
-  
               <input type="email"
                 name="footer-usermail"
                 id="footer-user-mail"
@@ -577,7 +596,6 @@
               id="user-comment"
               class="modal-input modal-comment"
               placeholder="Text input"></textarea>
-            
           </div>
 
           <div class="modal-checkbox-wrapper">
@@ -597,11 +615,13 @@
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
-
-              I accept the terms and conditions of the
-              <a class="privacy-policy" href="#">
-                Privacy Policy
-              </a>
+  
+              <div>
+                I accept the terms and conditions of the
+                <a class="privacy-policy" href="#">
+                  Privacy Policy
+                </a>
+              </div>
             </label>
           </div>
 
@@ -610,8 +630,65 @@
           </button>
         </form>
       </div>
+    </div> 
+  
+    <div class="burger-menu-overlay">
+      <div class="burger-menu">
+        <button type="button" class="close-button">
+          <svg class="burger-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <nav>
+          <ul class="burger-menu-nav">
+            <li><a href="#" style="color: var(--iris)">Studio</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <address>
+          <ul class="burger-contacts">
+            <li><a href="#">+11 (000) 111-11-11</a></li>
+            <li><a href="#">info@devstudio.com</a></li>
+          </ul>
+        </address>
+
+        <ul class="burger-socials-wrapper">
+          <li class="main-team-wrapper-item">
+            <a href="https://www.instagram.com" class="main-team-link-item" target="_blank">
+              <svg class="socials-icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="main-team-wrapper-item">
+            <a href="https://www.twitter.com" class="main-team-link-item" target="_blank">
+              <svg class="socials-icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-team-wrapper-item">
+            <a href="https://www.facebook.com" class="main-team-link-item" target="_blank">
+              <svg class="socials-icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-team-wrapper-item">
+            <a href="https://www.linkedin.com" class="main-team-link-item" target="_blank">
+              <svg class="socials-icon" height="24" width="24">
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-
+    <script src="./js/script.js"></script>
   </body>
 </html>
