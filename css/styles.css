@@ -253,7 +253,7 @@ textarea {
 }
 
 .main-section {
-  padding: 72px 52px;
+  padding: 72px 0;
   margin: 0 auto;
   max-width: 1440px;
   background-image:
@@ -350,7 +350,7 @@ textarea {
 }
 
 @media (min-width: 1158px) {
-  .main-section {
+  section.main-section {
     padding: 188px 0;
   }
 
@@ -373,7 +373,7 @@ textarea {
 
 /* Qualities */
 .main-qualities {
-  padding: 96px 16px; 
+  padding: 96px 0; 
 }
 
 .main-qualities-header {
@@ -476,7 +476,7 @@ textarea {
 }
 
 .main-team-container {
-  padding: 96px 28px;
+  padding: 96px 0;
 }
 
 .main-team-list {
@@ -553,8 +553,6 @@ textarea {
 
 @media (min-width: 768px) and (max-width: 1157px) {
   .main-team-container {
-    padding-left: 108px;
-    padding-right: 108px;
     max-width: 768px;
   }
 
@@ -583,7 +581,7 @@ textarea {
 /* Portfolio */
 .main-portfolio {
   text-transform: capitalize;
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 
 .main-portfolio-header {
@@ -1152,7 +1150,7 @@ textarea {
   height: 100%;
   top: 0;
   right: 0;
-  padding: 72px 16px 0;
+  padding: 72px 16px 40px;
   background: var(--white);
   z-index: 99;
   opacity: 0;
@@ -1163,6 +1161,10 @@ textarea {
 .burger-menu-overlay.is-visible {
   opacity: 1;
   pointer-events: auto;
+}
+
+.burger-menu-overlay nav {
+  flex-grow: 1;
 }
 
 .burger-menu-nav {
@@ -1176,7 +1178,6 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 168px;
 }
 
 .burger-menu-nav > li > a {
@@ -1184,9 +1185,12 @@ textarea {
 }
 
 .burger-menu {
+  display: flex;
+  flex-direction: column;
   position: relative;
   max-width: 288px;
   margin: 0 auto;
+  height: 100%;
 }
 
 .burger-close-button {
